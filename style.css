@@ -373,7 +373,7 @@ header {
     border-top: 0.5px solid #00000050;
 }
 
-@media (600px<width<1220px) {
+@media (600px<width<1300px) {
 
     .section-1 {
         flex-direction: column;
@@ -391,15 +391,22 @@ header {
     }
 
     .new-arrival-2 {
-        display: none;
+        position: static;
+        width: 50%;
+        height: auto;
     }
 
     .new-arrival-1 img {
         border-radius: 0rem;
     }
 
+    .new-arrival-2 img {
+        border-radius: 0em;
+    }
+
     .new-arrival-1 {
         position: static;
+        width: 50%;
         height: auto;
     }
 
@@ -410,6 +417,7 @@ header {
     .section-1-left-col-h1-div {
         display: flex;
         flex-direction: row;
+        gap: 1rem;
     }
 
     .hero-page-hr-1 {
@@ -1281,4 +1289,35 @@ header {
 .p-side {
     padding: 0rem 8.125rem;
 
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 45px;
+    aspect-ratio: .75;
+    --c: no-repeat linear-gradient(#000 0 0);
+    background:
+        var(--c) 0% 100%,
+        var(--c) 50% 100%,
+        var(--c) 100% 100%;
+    background-size: 20% 65%;
+    animation: l5 1s infinite linear;
+}
+
+@keyframes l5 {
+    20% {
+        background-position: 0% 50%, 50% 100%, 100% 100%
+    }
+
+    40% {
+        background-position: 0% 0%, 50% 50%, 100% 100%
+    }
+
+    60% {
+        background-position: 0% 100%, 50% 0%, 100% 50%
+    }
+
+    80% {
+        background-position: 0% 100%, 50% 100%, 100% 0%
+    }
 }
