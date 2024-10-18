@@ -201,13 +201,19 @@ header {
     color: white;
   }
 
-  #check:checked ~ .nav-links {
+  #check:checked~.nav-links {
     right: 0%;
   }
 }
 
 .nav-icons {
   display: flex;
+}
+
+@media (width<600px) {
+  .desktop-nav {
+    padding: 2rem 4rem 2rem 1.3rem;
+  }
 }
 
 /*Main section  */
