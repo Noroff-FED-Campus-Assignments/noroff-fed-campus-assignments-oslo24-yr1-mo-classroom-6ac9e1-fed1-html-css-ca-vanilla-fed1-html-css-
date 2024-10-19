@@ -17,14 +17,6 @@ html {
     justify-content: center;
 }
 
-.section-2-gallery-common {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 14.5rem;
-    height: auto;
-}
-
 body {
     min-height: 100dvh;
 }
@@ -567,6 +559,13 @@ header {
 
 /*imp! SECTION-2 */
 
+.section-2-gallery-common {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 14.5rem;
+    height: auto;
+}
 
 .section-2-title-h4 h4 {
     font-family: 'Prompt';
@@ -576,7 +575,7 @@ header {
     padding-bottom: 2.4rem;
 }
 
-.section-2-gallery-common img {
+.section-2-gallery-common div img {
     width: 14.5rem;
 }
 
@@ -792,7 +791,7 @@ header {
 
 
 .section-3-content-1 {
-    background-image: url(/images/main-page-img/best-seller-1.jpg);
+    background-image: url(/images/hero-page-img/best-seller-1.jpg);
     background-size: cover;
     min-width: 12rem;
     height: 100%;
@@ -802,7 +801,7 @@ header {
     transition: background-image .5s ease-in-out;
 
     &:hover {
-        background-image: url(/images/main-page-img/best-seller-1-bg.jpeg);
+        background-image: url(/images/hero-page-img/best-seller-1-bg.jpeg);
     }
 }
 
@@ -857,7 +856,7 @@ header {
 
 
 .section-3-content-2 {
-    background-image: url(/images/main-page-img/best-seller-2.jpg);
+    background-image: url(/images/hero-page-img/best-seller-2.jpg);
     background-size: cover;
     min-width: 14rem;
     height: 100%;
@@ -867,7 +866,7 @@ header {
     transition: background-image .5s ease-in-out;
 
     &:hover {
-        background-image: url(/images/main-page-img/best-seller-2-bg.jpeg);
+        background-image: url(/images/hero-page-img/best-seller-2-bg.jpeg);
     }
 }
 
@@ -925,7 +924,7 @@ header {
 
 
 .section-3-content-3 {
-    background-image: url(/images/main-page-img/best-seller-3.jpg);
+    background-image: url(/images/hero-page-img/best-seller-3.jpg);
     background-size: cover;
     min-width: 15rem;
     height: 100%;
@@ -935,7 +934,7 @@ header {
     transition: background-image .5s ease-in-out;
 
     &:hover {
-        background-image: url(/images/main-page-img/best-seller-3-bg.jpeg);
+        background-image: url(/images/hero-page-img/best-seller-3-bg.jpeg);
     }
 }
 
@@ -993,7 +992,7 @@ header {
 }
 
 .section-3-content-4 {
-    background-image: url(/images/main-page-img/best-seller-4.jpg);
+    background-image: url(/images/hero-page-img/best-seller-4.jpg);
     background-size: cover;
     min-width: 14rem;
     height: 100%;
@@ -1003,7 +1002,7 @@ header {
     transition: background-image .5s ease-in-out;
 
     &:hover {
-        background-image: url(images//main-page-img/best-seller-4-bg.jpg);
+        background-image: url(images//hero-page-img/best-seller-4-bg.jpg);
         ;
     }
 }
@@ -1062,7 +1061,7 @@ header {
 
 
 .section-3-content-5 {
-    background-image: url(/images/main-page-img/best-seller-5.jpg);
+    background-image: url(/images/hero-page-img/best-seller-5.jpg);
     background-size: cover;
     min-width: 12rem;
     height: 100%;
@@ -1072,7 +1071,7 @@ header {
     transition: background-image .5s ease-in-out;
 
     &:hover {
-        background-image: url(/images/main-page-img/best-seller-5-bg.jpeg);
+        background-image: url(/images/hero-page-img/best-seller-5-bg.jpeg);
     }
 }
 
@@ -1196,7 +1195,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         text-align: center;
     }
 
@@ -1242,7 +1241,12 @@ header {
         font-weight: 500;
         text-transform: uppercase;
     }
+}
 
+@media (width>600px) {
+    .section-3-mobile {
+        display: none;
+    }
 }
 
 
@@ -1601,6 +1605,7 @@ header {
 
     .l-footer-row-1 {
         flex-direction: column;
+        width: 100%;
     }
 
     .l-footer-col-2 {
