@@ -282,220 +282,6 @@ main {
   display: none;
 }
 
-@media only screen and (width>999px) {
-  .c-products-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 1rem;
-  }
-
-  .c-jacket-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-    font-size: 18px;
-    font-family: 'Prompt';
-  }
-
-  .c-hero {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
-    .c-hero-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      justify-content: center;
-
-      .c-hero-img {
-        width: 100%;
-      }
-
-      .c-hero-text {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        top: 75%;
-        color: white;
-        font-size: 4rem;
-        font-weight: 600;
-        font-family: 'Prompt';
-      }
-    }
-  }
-
-  .c-hide-filter {
-    display: flex;
-    font-weight: bold;
-    flex: 1 1 auto;
-  }
-
-  .c-header-items {
-    justify-content: end;
-    flex: 15 1 auto;
-  }
-
-  .c-header-filter {
-    flex: 1 1 auto;
-  }
-
-  .c-header-sort {
-    display: none;
-  }
-
-  .c-jackets {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .c-activity {
-    display: flex;
-    flex-direction: column;
-    flex: 1 2 auto;
-    width: 100%;
-
-    .c-activity-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      border: 2px solid grey;
-      padding: 2rem 2rem;
-      font-family: 'Prompt';
-      font-weight: 500;
-
-      .c-activity-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 2rem;
-        font-weight: 600;
-      }
-
-      .c-activity-choose {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-        padding: 0.5rem 0rem;
-
-        .c-activity-checkbox {
-          display: flex;
-          border-color: #858383;
-          width: 22px;
-          height: 22px;
-        }
-      }
-
-      .c-activity-btn {
-        display: flex;
-        width: 100%;
-        cursor: pointer;
-        text-decoration: underline;
-        padding: 1rem 0rem;
-      }
-
-      .c-line-activity {
-        border-bottom: 1px solid #858383;
-        padding-bottom: 2rem;
-        font-size: 18px;
-      }
-
-      .c-activity-choosecolor {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 2rem;
-        font-weight: 600;
-        padding-top: 2rem;
-      }
-
-      .c-activity-color-container {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        flex-wrap: wrap;
-        padding-bottom: 1rem;
-        justify-content: space-between;
-
-        .c-activity-color-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 0.5rem;
-
-          .c-activity-color-ball {
-            display: flex;
-            padding: 24px 24px;
-            border-radius: 100%;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .c-activity-color-name {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .c-color-beige {
-            background-color: #f5f5dc;
-          }
-
-          .c-color-black {
-            background-color: #000000;
-          }
-
-          .c-color-blue {
-            background-color: #0146ac;
-          }
-
-          .c-color-grey {
-            background-color: #8b8e8c;
-          }
-
-          .c-color-yellow {
-            background-color: #eea722;
-          }
-
-          .c-color-red {
-            background-color: #c91f2d;
-          }
-
-          .c-color-cactus {
-            background-color: #536649;
-          }
-
-          .c-color-pink {
-            background-color: #ffbfcb;
-          }
-
-          .c-color-green {
-            background-color: #008001;
-          }
-        }
-      }
-    }
-  }
-
-  .c-jacket-list {
-    flex: 1 1 auto;
-  }
-}
-
 .c-jacket-list {
   display: flex;
   flex-direction: row;
@@ -674,6 +460,228 @@ main {
     flex-wrap: nowrap;
     gap: 2rem;
   }
+
+  .c-jacket-item {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (width>999px) {
+  .c-products-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .c-jacket-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-family: 'Prompt';
+  }
+
+  .c-hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .c-hero-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+
+      .c-hero-img {
+        width: 100%;
+      }
+
+      .c-hero-text {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 75%;
+        color: white;
+        font-size: 4rem;
+        font-weight: 600;
+        font-family: 'Prompt';
+      }
+    }
+  }
+
+  .c-hide-filter {
+    display: flex;
+    font-weight: bold;
+    flex: 1 1 auto;
+  }
+
+  .c-header-items {
+    justify-content: end;
+    flex: 15 1 auto;
+  }
+
+  .c-header-filter {
+    flex: 1 1 auto;
+  }
+
+  .c-header-sort {
+    display: none;
+  }
+
+  .c-jackets {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .c-activity {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 auto;
+    width: 100%;
+    max-width: 400px;
+
+    .c-activity-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 2px solid grey;
+      padding: 2rem 2rem;
+      font-family: 'Prompt';
+      font-weight: 500;
+
+      .c-activity-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        font-weight: 600;
+      }
+
+      .c-activity-choose {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 0rem;
+
+        .c-activity-checkbox {
+          display: flex;
+          border-color: #858383;
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      .c-activity-btn {
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        text-decoration: underline;
+        padding: 1rem 0rem;
+      }
+
+      .c-line-activity {
+        border-bottom: 1px solid #858383;
+        padding-bottom: 2rem;
+        font-size: 18px;
+      }
+
+      .c-activity-choosecolor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        font-weight: 600;
+        padding-top: 2rem;
+      }
+
+      .c-activity-color-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        justify-content: space-between;
+
+        .c-activity-color-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+
+          .c-activity-color-ball {
+            display: flex;
+            padding: 24px 24px;
+            border-radius: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .c-activity-color-name {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .c-color-beige {
+            background-color: #f5f5dc;
+          }
+
+          .c-color-black {
+            background-color: #000000;
+          }
+
+          .c-color-blue {
+            background-color: #0146ac;
+          }
+
+          .c-color-grey {
+            background-color: #8b8e8c;
+          }
+
+          .c-color-yellow {
+            background-color: #eea722;
+          }
+
+          .c-color-red {
+            background-color: #c91f2d;
+          }
+
+          .c-color-cactus {
+            background-color: #536649;
+          }
+
+          .c-color-pink {
+            background-color: #ffbfcb;
+          }
+
+          .c-color-green {
+            background-color: #008001;
+          }
+        }
+      }
+    }
+  }
+
+  .c-jacket-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    height: auto;
+  }
 }
 
 .section-6 {
@@ -794,6 +802,7 @@ main {
 
 .c-footer-follow {
   display: flex;
+  flex-direction: row;
   padding-top: 2rem;
   align-items: center;
   flex: 1 1 100%;
