@@ -201,7 +201,7 @@ header {
     color: white;
   }
 
-  #check:checked ~ .nav-links {
+  #check:checked~.nav-links {
     right: 0%;
   }
 }
@@ -604,6 +604,7 @@ main {
   padding-bottom: 2rem;
   padding-top: 0.7rem;
 }
+
 .c-line-products-left {
   display: flex;
   flex: 1 1 auto;
