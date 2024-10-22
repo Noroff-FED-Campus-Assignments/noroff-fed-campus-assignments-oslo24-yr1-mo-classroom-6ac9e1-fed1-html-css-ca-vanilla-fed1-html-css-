@@ -64,13 +64,13 @@
             <a href="index.html" class="nav-item">Home</a>
           </li>
           <li role="jackets">
-            <a href="guitar.html" class="nav-item">Jackets</a>
+            <a href="men.html" class="nav-item">Jackets</a>
           </li>
           <!-- <li> <a href="guitar.html" class="nav-item">Men’s</a></li>
                 <li> <a href="contact.html" class="nav-item">Women’s</a></li>
                 <li> <a href="contact.html" class="nav-item">Kids</a></li> -->
           <li role="aboutus">
-            <a href="contact.html" class="nav-item">About us</a>
+            <a href="about.html" class="nav-item">About us</a>
           </li>
           <li role="contact">
             <a href="contact.html" class="nav-item">Contact</a>
@@ -92,35 +92,389 @@
     </header>
 
     <main>
-      <section class="c-jackets">
+      <section class="c-adjust">
+        <div class="c-products-header">
+          <h1>Products</h1>
+        </div>
         <div class="c-jacket-header">
-          <h3>Home > Men</h3>
+          <p>Home > Men</p>
         </div>
 
-        <div class="c-best-seller-list">
-          <div class="c-best-seller-item">
-            <div class="c-best-seller-img-conatiner">
+        <div class="c-hero">
+          <div class="c-hero-container">
+            <img
+              src="/images/men-img/hero-men.jpg"
+              alt="Model on top of a mountain"
+              class="c-hero-img"
+            />
+            <div class="c-hero-text">Men's Clothing</div>
+          </div>
+        </div>
+
+        <div class="c-jacket-filter">
+          <div class="c-hide-filter">
+            <p>Hide Filter</p>
+          </div>
+
+          <div class="c-header-items">
+            <p>60 items</p>
+          </div>
+
+          <div class="c-header-sort">
+            <i class="fa-solid fa-arrow-up-long"></i>
+            <i class="fa-solid fa-arrow-down-long"></i>
+            <p>Sort by</p>
+          </div>
+
+          <div class="c-header-filter">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+            <p>Filter</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-jackets">
+        <div class="c-activity">
+          <div class="c-activity-container">
+            <div class="c-activity-header">
+              <div>Activity</div>
+              <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="c-activity-choose">
+              <input type="checkbox" id="Outdoor" class="c-activity-checkbox" />
+              <p>Outdoor</p>
+            </div>
+
+            <div class="c-activity-choose">
+              <input
+                type="checkbox"
+                id="Back Country/Ski Touring"
+                class="c-activity-checkbox"
+              />
+              <p>Back Country/Ski Touring</p>
+            </div>
+
+            <div class="c-activity-choose">
+              <input type="checkbox" id="Camping" class="c-activity-checkbox" />
+              <p>Camping & Hiking</p>
+            </div>
+
+            <div class="c-activity-choose">
+              <input type="checkbox" id="Coastal" class="c-activity-checkbox" />
+              <p>Caostal Sailing</p>
+            </div>
+
+            <div class="c-activity-choose">
+              <input
+                type="checkbox"
+                id="Commuting"
+                class="c-activity-checkbox"
+              />
+              <p>Commuting</p>
+            </div>
+
+            <div class="c-activity-btn">View more</div>
+
+            <div class="c-line-activity"></div>
+
+            <div class="c-activity-choosecolor">
+              <div>Choose</div>
+              <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="c-activity-color-container">
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-beige"></div>
+                <div class="c-activity-color-name">Beige</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-black"></div>
+                <div class="c-activity-color-name">Black</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-blue"></div>
+                <div class="c-activity-color-name">Blue</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-grey"></div>
+                <div class="c-activity-color-name">Grey</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-yellow"></div>
+                <div class="c-activity-color-name">Yellow</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-red"></div>
+                <div class="c-activity-color-name">Red</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-cactus"></div>
+                <div class="c-activity-color-name">Cactus</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-pink"></div>
+                <div class="c-activity-color-name">Pink</div>
+              </div>
+
+              <div class="c-activity-color-item">
+                <div class="c-activity-color-ball c-color-green"></div>
+                <div class="c-activity-color-name">Green</div>
+              </div>
+            </div>
+
+            <div class="c-activity-btn">View more</div>
+          </div>
+        </div>
+
+        <div class="c-jacket-list">
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
               <img src="/images/men-img/image.jpg" alt="Jacket model" />
             </div>
 
-            <div class="c-item-row">
-              <div class="c-item-col">
-                <div class="c-color-container">
-                  <div class="c-color-btn-black"></div>
-                  <div class="c-color-btn-blue"></div>
-                  <div class="c-color-btn-red"></div>
-                </div>
-                <h3>Apex V2</h3>
-                <p>NOK 999</p>
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
               </div>
-              <div class="c-item-btn">
-                <a href="/products.html" class="c-btn-view">View</a>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-1.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
               </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-2.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-3.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-4.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-5.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-6.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-7.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-8.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-9.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-10.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
+            </div>
+          </div>
+
+          <div class="c-jacket-item">
+            <div class="c-jacket-img-conatiner">
+              <img src="/images/men-img/image-11.jpg" alt="Jacket model" />
+            </div>
+
+            <div class="c-item-col">
+              <div class="c-color-container">
+                <div class="c-color-btn-black"></div>
+                <div class="c-color-btn-blue"></div>
+                <div class="c-color-btn-red"></div>
+              </div>
+              <h3>Men's Odin Everdown Hooded Jacket</h3>
+              <p>NOK 999</p>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="c-view-more">
+        <div class="c-view-more-container">
+          <p>You have looked at 12 out of 60 products</p>
+          <div class="c-line-products-container">
+            <div class="c-line-products-left"></div>
+            <div class="c-line-products-right"></div>
+          </div>
+
+          <div class="c-load-more-btn">
+            <div>Load more</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-shipping">
+        <div class="c-line"></div>
+
+        <div class="c-container-shipping">
+          <div class="c-free-shipping">
+            <h4>Free Shipping</h4>
+            <p>
+              "Enjoy Free Shipping on All Orders—No Minimum Purchase Required!
+              Shop Now and Get Your Favorites Delivered Straight to Your
+              Doorstep!"
+            </p>
+          </div>
+
+          <div class="c-free-shipping">
+            <h4>Fast Shipping</h4>
+            <p>
+              "Get It Fast! Enjoy Lightning-Quick Shipping Straight to Your
+              Doorstep—Shop Now and Have Your Order Delivered in No Time!"
+            </p>
+          </div>
+
+          <div class="c-free-shipping">
+            <h4>Long Warranty</h4>
+            <p>
+              "Shop with Confidence! Our Extended Warranty Covers You for the
+              Long Haul—Enjoy Peace of Mind with Every Purchase!"
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="section-6 common-div">
+        <div class="c-line"></div>
         <div class="section-6-main-container">
           <div class="section-6-visa section-6-payment-common">
             <img src="/images/payment icons/visa.svg" alt="Visa Card" />
