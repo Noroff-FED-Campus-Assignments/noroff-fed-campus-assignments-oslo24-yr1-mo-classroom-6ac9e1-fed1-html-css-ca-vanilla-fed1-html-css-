@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-star: #FCB502;
+    --background-color-red-btn: #da2c00;
+    --background-color-blue-btn: #039BE5;
+    --background-color-footer: #03346E;
+    --background-color-addbtn: #da2c00;
+    --background-color-addbtn-hover: #b5b5b5;
+
+}
+
 /*imp! COMMON CSS */
 
 html {
@@ -607,6 +617,7 @@ header {
     flex-direction: row;
     gap: 0.4rem;
     padding-top: 0.5rem;
+    justify-content: space-between;
 }
 
 .section-2-clr-selection-common {
@@ -719,6 +730,31 @@ header {
     height: none;
     border: none;
     border-top: 0.5px solid #00000050;
+}
+
+.section-2-gallery-1 {
+    display: flex;
+}
+
+.add-btn-div {
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add-btn-div a {
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
+    background-color: var(--background-color-addbtn);
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto';
+
+    &:hover {
+        background-color: var(--background-color-addbtn-hover);
+    }
 }
 
 @media (width<600px) {
@@ -1336,7 +1372,7 @@ header {
 
     .section-4-main-container-mobile-gallery-items-text h4 {
         font-family: 'Roboto';
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
 
@@ -1522,6 +1558,12 @@ header {
     border-top: 0.5px solid #00000050;
 }
 
+@media (width<600px) {
+    .section-6 {
+        padding: 2rem 2rem;
+
+    }
+}
 
 /*imp! FOOTER */
 
