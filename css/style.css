@@ -1275,6 +1275,83 @@ header {
 }
 
 
+@media (width<600px) {
+    .section-4 {
+        display: none;
+    }
+
+    .section-4-mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.3rem 2rem 1.3rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-4-main-container-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-4-main-container-mobile-heading-div h2 {
+        font-family: 'Roboto';
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-bottom: 1.8rem;
+    }
+
+    .section-4-main-container-mobile-gallery {
+        display: flex;
+        /* gap: 1rem; */
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+
+    .section-4-main-container-mobile-gallery-1 {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .section-4-main-container-mobile-gallery-2 {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .section-4-main-container-mobile-gallery-items {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .section-4-main-container-mobile-gallery-items div img {
+        width: 100%;
+    }
+
+    .section-4-main-container-mobile-gallery-items-text {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .section-4-main-container-mobile-gallery-items-text h4 {
+        font-family: 'Roboto';
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .section-4-main-container-mobile-gallery-items-text h4:nth-child(2) {
+        font-weight: 300;
+    }
+
+}
+
+@media (width>600px) {
+    .section-4-mobile {
+        display: none;
+    }
+}
+
 /*imp! SECTION-5 */
 
 
@@ -1350,7 +1427,7 @@ header {
     }
 }
 
-@media (600px<width<999px) {
+@media (width<999px) {
 
     .section-5 {
         padding: 4.5rem 6rem;
@@ -1388,6 +1465,12 @@ header {
 
     .section-5-description-text-common {
         text-align: center;
+    }
+}
+
+@media (width<600px) {
+    .section-5 {
+        padding: 3rem 6rem 3rem 6rem;
     }
 }
 
