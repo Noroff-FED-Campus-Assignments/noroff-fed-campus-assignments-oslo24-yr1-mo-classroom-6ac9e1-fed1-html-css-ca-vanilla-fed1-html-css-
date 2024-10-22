@@ -223,10 +223,457 @@ main {
   margin-top: 112.2px;
 }
 
-.l-best-seller {
+.c-adjust {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.c-jacket-header {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Prompt';
+}
+
+.c-jacket-filter {
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 13px;
+}
+
+.c-hide-filter {
+  display: none;
+}
+
+.c-header-items {
+  display: flex;
+  flex: 1 1 auto;
+  font-weight: bold;
+}
+
+.c-header-sort {
+  display: flex;
+  flex: 15 1 auto;
+  justify-content: end;
+  text-transform: uppercase;
+}
+
+.c-header-filter {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: end;
+  text-transform: uppercase;
+}
+
+.c-jackets {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 4%;
+}
+
+.c-activity {
+  display: none;
+}
+
+.c-products-header {
+  display: none;
+}
+
+.c-hero {
+  display: none;
+}
+
+@media only screen and (width>999px) {
+  .c-products-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .c-jacket-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-family: 'Prompt';
+  }
+
+  .c-hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .c-hero-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+
+      .c-hero-img {
+        width: 100%;
+      }
+
+      .c-hero-text {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 75%;
+        color: white;
+        font-size: 4rem;
+        font-weight: 600;
+        font-family: 'Prompt';
+      }
+    }
+  }
+
+  .c-hide-filter {
+    display: flex;
+    font-weight: bold;
+    flex: 1 1 auto;
+  }
+
+  .c-header-items {
+    justify-content: end;
+    flex: 15 1 auto;
+  }
+
+  .c-header-filter {
+    flex: 1 1 auto;
+  }
+
+  .c-header-sort {
+    display: none;
+  }
+
+  .c-jackets {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .c-activity {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 auto;
+    width: 100%;
+
+    .c-activity-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 2px solid grey;
+      padding: 2rem 2rem;
+      font-family: 'Prompt';
+      font-weight: 500;
+
+      .c-activity-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        font-weight: 600;
+      }
+
+      .c-activity-choose {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 0rem;
+
+        .c-activity-checkbox {
+          display: flex;
+          border-color: #858383;
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      .c-activity-btn {
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        text-decoration: underline;
+        padding: 1rem 0rem;
+      }
+
+      .c-line-activity {
+        border-bottom: 1px solid #858383;
+        padding-bottom: 2rem;
+        font-size: 18px;
+      }
+
+      .c-activity-choosecolor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        font-weight: 600;
+        padding-top: 2rem;
+      }
+
+      .c-activity-color-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        justify-content: space-between;
+
+        .c-activity-color-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+
+          .c-activity-color-ball {
+            display: flex;
+            padding: 24px 24px;
+            border-radius: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .c-activity-color-name {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .c-color-beige {
+            background-color: #f5f5dc;
+          }
+
+          .c-color-black {
+            background-color: #000000;
+          }
+
+          .c-color-blue {
+            background-color: #0146ac;
+          }
+
+          .c-color-grey {
+            background-color: #8b8e8c;
+          }
+
+          .c-color-yellow {
+            background-color: #eea722;
+          }
+
+          .c-color-red {
+            background-color: #c91f2d;
+          }
+
+          .c-color-cactus {
+            background-color: #536649;
+          }
+
+          .c-color-pink {
+            background-color: #ffbfcb;
+          }
+
+          .c-color-green {
+            background-color: #008001;
+          }
+        }
+      }
+    }
+  }
+
+  .c-jacket-list {
+    flex: 1 1 auto;
+  }
+}
+
+.c-jacket-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.c-jacket-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 135px;
+  height: auto;
+}
+
+.c-jacket-img-conatiner {
+  display: flex;
+}
+
+.c-jacket-img-conatiner img {
+  width: 100%;
+}
+
+.c-item-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-color-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.c-color-btn-black {
+  display: flex;
+  padding: 10px 10px;
+  background-color: black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.c-color-btn-blue {
+  display: flex;
+  padding: 10px 10px;
+  background-color: blue;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.c-color-btn-red {
+  display: flex;
+  padding: 10px 10px;
+  background-color: red;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.c-item-col h3 {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.c-item-col h3 {
+  display: flex;
+  font-size: 16px;
+}
+
+.c-view-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 5%;
+}
+
+.c-view-more-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+.c-view-more-container p {
+  display: flex;
+  color: #5f5e5e;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.c-line-products-container {
+  display: flex;
+  width: 60%;
+  padding-bottom: 2rem;
+  padding-top: 0.7rem;
+}
+.c-line-products-left {
+  display: flex;
+  flex: 1 1 auto;
+  border-radius: 5px;
+  border-bottom: 4px solid gray;
+}
+
+.c-line-products-right {
+  display: flex;
+  flex: 2 1 auto;
+  border-radius: 5px;
+  border-bottom: 4px solid lightgrey;
+}
+
+.c-load-more-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  border: 2px black solid;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 60%;
+  height: auto;
+  font-family: 'Roboto';
+}
+
+.c-shipping {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 5%;
+}
+
+.c-line {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid #e7e7e7;
+}
+
+.c-container-shipping {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 4%;
+}
+
+.c-free-shipping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.c-free-shipping h4 {
+  padding-bottom: 0.75rem;
+}
+
+@media screen and (width>786px) {
+  .c-container-shipping {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
 }
 
 .section-6 {
