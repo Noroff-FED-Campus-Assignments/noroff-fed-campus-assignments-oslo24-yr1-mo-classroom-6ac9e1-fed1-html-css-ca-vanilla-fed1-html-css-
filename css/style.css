@@ -1873,6 +1873,7 @@ header {
 
 .c-summary-btn {
     display: flex;
+
     padding-top: 1.2rem;
     font-size: 16px;
     color: white;
@@ -1880,6 +1881,7 @@ header {
     font-size: 1rem;
     font-weight: 300;
     cursor: pointer;
+
 }
 
 .c-footer-region {

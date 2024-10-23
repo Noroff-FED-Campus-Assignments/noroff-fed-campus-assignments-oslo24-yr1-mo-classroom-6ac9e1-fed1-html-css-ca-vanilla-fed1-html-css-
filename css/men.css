@@ -20,21 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.common-div {
-  display: flex;
-  flex-direction: column;
-  padding: 4.5rem 6rem;
-  justify-content: center;
-}
-
-.section-2-gallery-common {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 14.5rem;
-  height: auto;
-}
-
 body {
   min-height: 100dvh;
   display: flex;
@@ -291,9 +276,11 @@ main {
   display: none;
 }
 
+
 .c-adjust {
   display: none;
 }
+
 
 .c-jacket-header {
   display: none;
@@ -409,11 +396,13 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+
     border: 1px solid grey;
     padding: 2rem 2rem;
     font-family: 'Prompt';
     font-weight: 500;
     min-width: 20rem;
+
 
     .c-activity-header {
       display: flex;
@@ -542,6 +531,7 @@ main {
       }
     }
   }
+
 }
 
 .c-jacket-list {
@@ -824,6 +814,7 @@ main {
   .section-5-col-2 {
     flex-direction: column;
     gap: 2rem;
+
   }
 
   .section-5-col- {
@@ -1163,6 +1154,7 @@ main {
 
 .c-footer-follow {
   display: flex;
+
   align-items: center;
   padding-top: 4rem;
 }
