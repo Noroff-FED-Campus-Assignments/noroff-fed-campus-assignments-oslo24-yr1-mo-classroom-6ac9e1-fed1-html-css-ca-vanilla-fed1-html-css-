@@ -591,6 +591,8 @@ header {
     }
 }
 
+
+
 /*imp! FOOTER */
 
 
@@ -788,7 +790,7 @@ header {
 .c-footer-col {
     display: flex;
     flex-direction: column;
-    padding: 0rem 2rem 2rem 2rem
+    padding: 1rem 2rem 2rem 2rem
 }
 
 .c-footer-help {
@@ -817,9 +819,13 @@ header {
 
 .c-summary-btn {
     display: flex;
-    padding-top: 0.2rem;
+    padding-top: 1.2rem;
     font-size: 16px;
     color: white;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
 }
 
 .c-footer-region {
@@ -954,10 +960,6 @@ header {
         display: flex;
     }
 }
-
-
-
-
 
 
 
