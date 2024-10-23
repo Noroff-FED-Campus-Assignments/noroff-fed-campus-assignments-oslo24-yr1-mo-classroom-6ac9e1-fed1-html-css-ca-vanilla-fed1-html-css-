@@ -10,21 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.common-div {
-  display: flex;
-  flex-direction: column;
-  padding: 4.5rem 6rem;
-  justify-content: center;
-}
-
-.section-2-gallery-common {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 14.5rem;
-  height: auto;
-}
-
 body {
   min-height: 100dvh;
   display: flex;
