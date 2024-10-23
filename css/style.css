@@ -1873,13 +1873,15 @@ header {
 
 .c-summary-btn {
     display: flex;
-    padding-top: 0.2rem;
+
+    padding-top: 1.2rem;
+    font-size: 16px;
     color: white;
     font-family: 'Roboto';
     font-size: 1rem;
-    cursor: pointer;
     font-weight: 300;
-    padding-top: 1rem;
+    cursor: pointer;
+
 }
 
 .c-footer-region {
