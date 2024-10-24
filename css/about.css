@@ -132,6 +132,34 @@ header {
     display: none;
 }
 
+.jacket-categories-main {
+    position: absolute;
+    top: 5rem;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 13rem;
+    max-height: 14rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.jacket-categories-sub ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket-categories-sub ul li a {
+    display: block;
+    width: 100%;
+}
+
+.nav-links li:hover .jacket-categories-main {
+    visibility: visible;
+    transition: max-height 0.2s ease-in;
+    opacity: 1;
+
+}
+
 @media (width <850px) {
     .nav-links {
         display: flex;
@@ -333,7 +361,15 @@ header {
 
 @media (width<600px) {
     .section-1-about {
-        padding: 8rem 4rem 2rem 4rem;
+        padding: 8rem 2rem 2rem 2rem;
+    }
+
+    .sec-1-title-div-about h4 {
+        font-size: 2rem;
+    }
+
+    .sec-1-title-div-about {
+        padding-bottom: 0;
     }
 }
 
