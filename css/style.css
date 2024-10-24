@@ -10,7 +10,7 @@
     --background-color-blue-btn: #039BE5;
     --background-color-footer: #03346E;
     --background-color-addbtn: #da2c00;
-    --background-color-addbtn-hover: #b5b5b5;
+    --background-color-addbtn-hover: #c9c9c9;
 
 }
 
@@ -70,6 +70,8 @@ header {
     display: flex;
     list-style: none;
     gap: 2rem;
+    background-color: #fff;
+    z-index: 80;
 }
 
 .nav-links a {
@@ -80,10 +82,27 @@ header {
     font-family: 'Poppins';
     font-weight: 500;
     color: #000;
-    /* padding-left: 1.438rem; */
+    padding: 1.8rem 0.7rem;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     justify-content: center;
+    width: 100%;
+}
+
+@media (width>850px) {
+    .nav-links li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        min-width: 6rem;
+        padding: 0rem 0.5rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav-links li:hover {
+        background-color: var(--background-color-addbtn-hover);
+    }
 }
 
 .nav-links li a::after {
@@ -130,6 +149,33 @@ header {
     display: none;
 }
 
+.jacket-categories-main {
+    position: absolute;
+    top: 5rem;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 13rem;
+    max-height: 0;
+    opacity: 0;
+}
+
+.jacket-categories-sub ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket-categories-sub ul li a {
+    display: block;
+    width: 100%;
+}
+
+.nav-item:focus~.jacket-categories-main {
+    max-height: 20rem;
+    transition: max-height 0.2s ease-in;
+    opacity: 1;
+}
+
+
 @media (width <850px) {
     .nav-links {
         display: flex;
@@ -161,14 +207,14 @@ header {
         width: 100%;
     }
 
-    .nav-links li a {
+    .nav-links li .nav-item {
         padding: 1rem;
         color: white;
         width: 100%;
         transition: all 0.5s ease-in-out;
     }
 
-    .nav-links li a:hover {
+    .nav-links li .nav-item:hover {
         color: #000000;
         border-bottom: 0.7rem solid red;
         margin: auto;
@@ -189,7 +235,6 @@ header {
         right: 0%;
     }
 }
-
 
 .nav-icons {
     display: flex;
@@ -347,6 +392,7 @@ header {
         height: 2.7rem;
         width: 11rem;
         border: 0px transparent;
+        background-color: #fff;
     }
 
 
@@ -359,6 +405,7 @@ header {
         height: 2.7rem;
         width: 11rem;
         border: 0px transparent;
+        background-color: #fff;
     }
 
     .categories-list-1-item-2 button a {
@@ -370,6 +417,7 @@ header {
         height: 2.7rem;
         width: 11rem;
         border: 0px transparent;
+        background-color: #fff;
     }
 
     .categories-list-2-item-1 button a {
@@ -381,6 +429,7 @@ header {
         height: 2.7rem;
         width: 11rem;
         border: 0px transparent;
+        background-color: #fff;
     }
 
     .categories-list-2-item-2 button a {
@@ -762,8 +811,9 @@ header {
 }
 
 @media (width<600px) {
-    .common-div {
-        padding: 0rem 1.5rem;
+
+    .section-2 {
+        padding: 2rem 1.5rem;
     }
 
     .section-2-title-h4 h4 {
