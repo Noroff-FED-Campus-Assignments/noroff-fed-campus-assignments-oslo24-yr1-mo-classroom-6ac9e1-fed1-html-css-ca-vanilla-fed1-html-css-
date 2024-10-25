@@ -45,8 +45,8 @@
             <input type="checkbox" id="check">
             <div class="nav-links">
                 <li role="home"> <a href="index.html" class="nav-item">Home</a></li>
-                <li role="jackets">
-                    <a href="/" class="nav-item nav-item-link ">Jackets</a>
+                <li role="jackets" id="jacket-links">
+                    <a href="#" class="nav-item nav-item-link ">Jackets</a>
                     <div class="jacket-categories-main">
                         <div class="jacket-categories-sub">
                             <ul>
@@ -57,7 +57,15 @@
                         </div>
                     </div>
                 </li>
-                <li role=" aboutus"> <a href="about.html" class="nav-item">About us</a></li>
+                <details class=" jacket-links-mobile">
+                                        <summary class="jacket-summary">
+                                            Jackets
+                                        </summary>
+                                        <a href="/men.html" class="c-summary-btn"> Men's</a>
+                                        <a href="/" class="c-summary-btn"> Women's</a>
+                                        <a href="/" class="c-summary-btn"> Kids</a>
+                                        </details>
+                                <li role=" aboutus"> <a href="about.html" class="nav-item">About us</a></li>
                                 <li role="contact"> <a href="contact.html" class="nav-item">Contact</a></li>
                                 <label for="check" class="c-close-menu">
                                     <i class="fa-solid fa-x"></i>
@@ -81,9 +89,6 @@
         <!--imp! SECTION-HERO -->
 
         <div class="hero-img" aria-label="section-hero">
-            <div>
-                <!-- <div class="hero-img-overlay"> -->
-            </div>
             <div class="heading-div">
                 <span class="Durable">"Durable,</span>
                 <span class="All-Weather">All-Weather Jackets</span>

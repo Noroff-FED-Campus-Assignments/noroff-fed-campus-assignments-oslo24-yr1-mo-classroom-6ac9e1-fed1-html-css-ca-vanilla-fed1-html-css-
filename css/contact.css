@@ -474,7 +474,23 @@ header {
     font-size: 4rem;
     font-weight: 600;
     font-family: 'Prompt';
-    padding-top: 17rem;
+    padding-top: 25rem;
+}
+
+@media (width<600px) {
+    .sec-1-main-title-div h4 {
+        font-size: 2rem;
+    }
+
+    .section-1-hero-img h1 {
+        display: none;
+    }
+
+    .section-1-hero-img {
+        padding: 0;
+        background-position: center;
+        min-height: 35dvh;
+    }
 }
 
 
