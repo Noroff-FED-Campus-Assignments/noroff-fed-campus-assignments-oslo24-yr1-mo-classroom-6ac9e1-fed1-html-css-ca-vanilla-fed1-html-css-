@@ -5,13 +5,12 @@
 }
 
 :root {
-  --color-star: #FCB502;
+  --color-star: #fcb502;
   --background-color-red-btn: #da2c00;
-  --background-color-blue-btn: #039BE5;
-  --background-color-footer: #03346E;
+  --background-color-blue-btn: #039be5;
+  --background-color-footer: #03346e;
   --background-color-addbtn: #da2c00;
   --background-color-addbtn-hover: #b5b5b5;
-
 }
 
 /*imp! COMMON CSS */
@@ -196,7 +195,7 @@ header {
     color: white;
   }
 
-  #check:checked~.nav-links {
+  #check:checked ~ .nav-links {
     right: 0%;
   }
 }
@@ -242,7 +241,6 @@ main {
   display: flex;
   flex: 1 1 auto;
   font-weight: bold;
-
 }
 
 .c-header-sort {
@@ -276,11 +274,9 @@ main {
   display: none;
 }
 
-
 .c-adjust {
   display: none;
 }
-
 
 .c-jacket-header {
   display: none;
@@ -321,8 +317,6 @@ main {
     }
   }
 
-
-}
 
 
 .c-jacket-header {
@@ -415,7 +409,6 @@ main {
     font-weight: 500;
     min-width: 20rem;
 
-
     .c-activity-header {
       display: flex;
       flex-direction: row;
@@ -469,7 +462,6 @@ main {
       font-family: 'Prompt';
       font-size: 1.2rem;
       font-weight: 500;
-
     }
 
     .c-activity-color-container {
@@ -543,7 +535,6 @@ main {
       }
     }
   }
-
 }
 
 .c-activity {
@@ -777,7 +768,6 @@ main {
 
 /*imp! SECTION-5 */
 
-
 .section-5 {
   padding: 4.5rem 16rem;
 }
@@ -817,7 +807,6 @@ main {
   text-align: justify;
   font-weight: 300;
   line-height: 1.2rem;
-
 }
 
 .section-5-col-text-side-line {
@@ -851,7 +840,6 @@ main {
 }
 
 @media (width<999px) {
-
   .section-5 {
     padding: 4.5rem 6rem;
     flex-direction: column;
@@ -879,7 +867,6 @@ main {
   .section-5-col-2 {
     flex-direction: column;
     gap: 2rem;
-
   }
 
   .section-5-col- {
@@ -900,7 +887,6 @@ main {
 
 /*imp! SECTION-6 */
 
-
 .section-6 {
   padding: 2rem 8.125rem;
 }
@@ -914,8 +900,8 @@ main {
 }
 
 .section-6-payment-common {
-  width: 2.50rem;
-  height: 1.50rem;
+  width: 2.5rem;
+  height: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -924,7 +910,6 @@ main {
   width: 100%;
   height: auto;
 }
-
 
 .section-6-klarna {
   width: 3.6rem;
@@ -952,16 +937,14 @@ main {
 
 /*imp! FOOTER */
 
-
 /*imp! FOOTER */
-
-
 
 .l-footer-main-1 {
   width: 100%;
   height: auto;
   padding: 4.25rem 6rem 1.5rem 6rem;
   background-color: #03346E;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -973,7 +956,6 @@ main {
   flex-direction: row;
   justify-content: space-between;
   height: auto;
-
 }
 
 .l-footer-col-1 {
@@ -1029,7 +1011,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 
 .l-footer-col-3 h6 {
@@ -1085,7 +1066,6 @@ main {
   flex-basis: 82%;
   background-color: #fff;
   height: 0.2px;
-
 }
 
 .l-footer-row-2-text {
@@ -1113,10 +1093,7 @@ main {
   color: white;
 }
 
-
-
 @media (600px<width<1220px) {
-
   .l-footer-row-1 {
     flex-direction: column;
     width: 100%;
@@ -1149,7 +1126,7 @@ main {
 .c-footer-col {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem 2rem 2rem
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .c-footer-help {
@@ -1300,7 +1277,6 @@ main {
   .c-follow-container {
     max-width: 17rem;
   }
-
 }
 
 @media (width<600px) {
@@ -1320,5 +1296,3 @@ main {
     display: flex;
   }
 }
-
-tesing
