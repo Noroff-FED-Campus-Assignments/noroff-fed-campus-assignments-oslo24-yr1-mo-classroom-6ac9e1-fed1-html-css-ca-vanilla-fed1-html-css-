@@ -70,6 +70,8 @@ header {
     display: flex;
     list-style: none;
     gap: 2rem;
+    background-color: #fff;
+    z-index: 80;
 }
 
 .nav-links a {
@@ -80,10 +82,28 @@ header {
     font-family: 'Poppins';
     font-weight: 500;
     color: #000;
-    /* padding-left: 1.438rem; */
+    padding: 1.8rem 0.7rem;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     justify-content: center;
+    width: 100%;
+}
+
+@media (width>850px) {
+
+    .nav-links li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        min-width: 6rem;
+        padding: 0rem 0.5rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav-links li:hover {
+        background-color: var(--background-color-addbtn-hover);
+    }
 }
 
 .nav-links li a::after {
@@ -130,7 +150,64 @@ header {
     display: none;
 }
 
+.jacket-categories-main {
+    position: absolute;
+    top: 5rem;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 13rem;
+    max-height: 14rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.jacket-categories-sub ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket-categories-sub ul li a {
+    display: block;
+    width: 100%;
+}
+
+.nav-links li:hover .jacket-categories-main {
+    visibility: visible;
+    transition: max-height 0.2s ease-in;
+    opacity: 1;
+
+}
+
+.jacket-links-mobile {
+    display: none;
+}
+
 @media (width <850px) {
+
+    .nav-links a {
+        font-size: 1rem;
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: #fff;
+
+    }
+
+    .jacket-links-mobile .c-summary-btn {
+        display: flex;
+        align-items: center;
+        height: 3.6rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: lightgray;
+            color: #000000;
+            border-bottom: 0.7rem solid red;
+            margin: auto;
+        }
+    }
+
+
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -161,14 +238,14 @@ header {
         width: 100%;
     }
 
-    .nav-links li a {
+    .nav-links li .nav-item {
         padding: 1rem;
         color: white;
         width: 100%;
         transition: all 0.5s ease-in-out;
     }
 
-    .nav-links li a:hover {
+    .nav-links li .nav-item:hover {
         color: #000000;
         border-bottom: 0.7rem solid red;
         margin: auto;
@@ -188,8 +265,86 @@ header {
     #check:checked~.nav-links {
         right: 0%;
     }
-}
 
+
+    .jacket-categories-main {
+        position: absolute;
+        top: 15rem;
+        overflow: hidden;
+        background-color: #fff;
+        min-width: 13rem;
+        max-height: 7rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .jacket-categories-sub ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jacket-categories-sub ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.3rem 0.7rem;
+
+    }
+
+    .nav-links li:hover .jacket-categories-main {
+        visibility: visible;
+        transition: max-height 0.2s ease-in;
+        opacity: 1;
+
+    }
+
+    .jacket-links-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #jacket-links {
+        display: none;
+        background-color: red;
+    }
+
+    .jacket-links-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .jacket-summary {
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 1rem;
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .jacket-summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .jacket-links-mobile .jacket-summary:hover {
+        background-color: lightgray;
+        color: #000000;
+        width: 100%;
+        border-bottom: 0.7rem solid red;
+        margin: auto;
+    }
+
+}
 
 .nav-icons {
     display: flex;
@@ -479,7 +634,7 @@ header {
 
 @media (width<600px) {
     .sec-1-main-title-div h4 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .section-1-hero-img h1 {
@@ -491,6 +646,11 @@ header {
         background-position: center;
         min-height: 35dvh;
     }
+
+    .section-1-contact {
+        padding-top: 7rem;
+    }
+
 }
 
 
@@ -831,6 +991,10 @@ header {
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.c-footer-summary::-webkit-details-marker {
+    display: none;
 }
 
 .c-summary-btn {
