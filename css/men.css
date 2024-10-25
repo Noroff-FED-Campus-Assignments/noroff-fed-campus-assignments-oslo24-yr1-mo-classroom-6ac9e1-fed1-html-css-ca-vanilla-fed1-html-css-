@@ -5,12 +5,13 @@
 }
 
 :root {
-  --color-star: #fcb502;
+  --color-star: #FCB502;
   --background-color-red-btn: #da2c00;
-  --background-color-blue-btn: #039be5;
-  --background-color-footer: #03346e;
+  --background-color-blue-btn: #039BE5;
+  --background-color-footer: #03346E;
   --background-color-addbtn: #da2c00;
   --background-color-addbtn-hover: #b5b5b5;
+
 }
 
 /*imp! COMMON CSS */
@@ -50,6 +51,7 @@ h6 {
 
 /*imp! HEADER */
 
+
 header {
   height: 5rem;
   width: 100%;
@@ -60,6 +62,8 @@ header {
   display: flex;
   align-items: center;
 }
+
+
 
 .desktop-nav {
   display: flex;
@@ -84,6 +88,8 @@ header {
   display: flex;
   list-style: none;
   gap: 2rem;
+  background-color: #fff;
+  z-index: 80;
 }
 
 .nav-links a {
@@ -94,10 +100,28 @@ header {
   font-family: 'Poppins';
   font-weight: 500;
   color: #000;
-  /* padding-left: 1.438rem; */
+  padding: 1.8rem 0.7rem;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   justify-content: center;
+  width: 100%;
+}
+
+@media (width>850px) {
+
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    min-width: 6rem;
+    padding: 0rem 0.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-links li:hover {
+    background-color: var(--background-color-addbtn-hover);
+  }
 }
 
 .nav-links li a::after {
@@ -121,6 +145,7 @@ header {
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
+
 }
 
 .c-open-menu {
@@ -143,7 +168,64 @@ header {
   display: none;
 }
 
+.jacket-categories-main {
+  position: absolute;
+  top: 5rem;
+  overflow: hidden;
+  background-color: #fff;
+  min-width: 13rem;
+  max-height: 14rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.jacket-categories-sub ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.jacket-categories-sub ul li a {
+  display: block;
+  width: 100%;
+}
+
+.nav-links li:hover .jacket-categories-main {
+  visibility: visible;
+  transition: max-height 0.2s ease-in;
+  opacity: 1;
+
+}
+
+.jacket-links-mobile {
+  display: none;
+}
+
 @media (width <850px) {
+
+  .nav-links a {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #fff;
+
+  }
+
+  .jacket-links-mobile .c-summary-btn {
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: lightgray;
+      color: #000000;
+      border-bottom: 0.7rem solid red;
+      margin: auto;
+    }
+  }
+
+
+
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -156,7 +238,7 @@ header {
     top: 0%;
     right: -100%;
     z-index: 100;
-    background-color: #03346e;
+    background-color: #03346E;
     transition: all 0.5s ease-in-out;
   }
 
@@ -165,6 +247,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
+
   }
 
   .nav-links li :hover {
@@ -173,18 +256,20 @@ header {
     width: 100%;
   }
 
-  .nav-links li a {
+  .nav-links li .nav-item {
     padding: 1rem;
     color: white;
     width: 100%;
     transition: all 0.5s ease-in-out;
   }
 
-  .nav-links li a:hover {
+  .nav-links li .nav-item:hover {
     color: #000000;
     border-bottom: 0.7rem solid red;
     margin: auto;
+
   }
+
 
   .c-open-menu,
   .c-close-menu {
@@ -195,9 +280,88 @@ header {
     color: white;
   }
 
-  #check:checked ~ .nav-links {
+  #check:checked~.nav-links {
     right: 0%;
   }
+
+
+  .jacket-categories-main {
+    position: absolute;
+    top: 15rem;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 13rem;
+    max-height: 7rem;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .jacket-categories-sub ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jacket-categories-sub ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+
+  }
+
+  .nav-links li:hover .jacket-categories-main {
+    visibility: visible;
+    transition: max-height 0.2s ease-in;
+    opacity: 1;
+
+  }
+
+  .jacket-links-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #jacket-links {
+    display: none;
+    background-color: red;
+  }
+
+  .jacket-links-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .jacket-summary {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .jacket-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .jacket-links-mobile .jacket-summary:hover {
+    background-color: lightgray;
+    color: #000000;
+    width: 100%;
+    border-bottom: 0.7rem solid red;
+    margin: auto;
+  }
+
 }
 
 .nav-icons {
@@ -241,6 +405,7 @@ main {
   display: flex;
   flex: 1 1 auto;
   font-weight: bold;
+
 }
 
 .c-header-sort {
@@ -274,9 +439,11 @@ main {
   display: none;
 }
 
+
 .c-adjust {
   display: none;
 }
+
 
 .c-jacket-header {
   display: none;
@@ -317,6 +484,8 @@ main {
     }
   }
 
+
+}
 
 
 .c-jacket-header {
@@ -409,6 +578,7 @@ main {
     font-weight: 500;
     min-width: 20rem;
 
+
     .c-activity-header {
       display: flex;
       flex-direction: row;
@@ -462,6 +632,7 @@ main {
       font-family: 'Prompt';
       font-size: 1.2rem;
       font-weight: 500;
+
     }
 
     .c-activity-color-container {
@@ -535,6 +706,7 @@ main {
       }
     }
   }
+
 }
 
 .c-activity {
@@ -689,22 +861,22 @@ main {
   border-bottom: 4px solid lightgrey;
 }
 
-.c-load-more-btn {
+.c-load-more-btn a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
   padding: 0.8rem 1.2rem;
-  border: 2px black solid;
+  border: 1px black solid;
   border-radius: 5px;
-  cursor: pointer;
-  max-width: 60%;
   height: auto;
   font-family: 'Roboto';
+  color: #000000;
 }
 
-.c-load-more-btn:hover {
+.c-load-more-btn a:hover {
   background-color: var(--background-color-addbtn-hover);
 }
 
@@ -768,6 +940,7 @@ main {
 
 /*imp! SECTION-5 */
 
+
 .section-5 {
   padding: 4.5rem 16rem;
 }
@@ -807,6 +980,7 @@ main {
   text-align: justify;
   font-weight: 300;
   line-height: 1.2rem;
+
 }
 
 .section-5-col-text-side-line {
@@ -840,6 +1014,7 @@ main {
 }
 
 @media (width<999px) {
+
   .section-5 {
     padding: 4.5rem 6rem;
     flex-direction: column;
@@ -867,6 +1042,7 @@ main {
   .section-5-col-2 {
     flex-direction: column;
     gap: 2rem;
+
   }
 
   .section-5-col- {
@@ -887,6 +1063,7 @@ main {
 
 /*imp! SECTION-6 */
 
+
 .section-6 {
   padding: 2rem 8.125rem;
 }
@@ -900,8 +1077,8 @@ main {
 }
 
 .section-6-payment-common {
-  width: 2.5rem;
-  height: 1.5rem;
+  width: 2.50rem;
+  height: 1.50rem;
   display: flex;
   align-items: center;
 }
@@ -910,6 +1087,7 @@ main {
   width: 100%;
   height: auto;
 }
+
 
 .section-6-klarna {
   width: 3.6rem;
@@ -937,14 +1115,16 @@ main {
 
 /*imp! FOOTER */
 
+
 /*imp! FOOTER */
+
+
 
 .l-footer-main-1 {
   width: 100%;
   height: auto;
   padding: 4.25rem 6rem 1.5rem 6rem;
   background-color: #03346E;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -956,6 +1136,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   height: auto;
+
 }
 
 .l-footer-col-1 {
@@ -1011,6 +1192,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
 }
 
 .l-footer-col-3 h6 {
@@ -1066,6 +1248,7 @@ main {
   flex-basis: 82%;
   background-color: #fff;
   height: 0.2px;
+
 }
 
 .l-footer-row-2-text {
@@ -1093,7 +1276,10 @@ main {
   color: white;
 }
 
+
+
 @media (600px<width<1220px) {
+
   .l-footer-row-1 {
     flex-direction: column;
     width: 100%;
@@ -1126,7 +1312,7 @@ main {
 .c-footer-col {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem
 }
 
 .c-footer-help {
@@ -1151,6 +1337,10 @@ main {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.c-footer-summary::-webkit-details-marker {
+  display: none;
 }
 
 .c-summary-btn {
@@ -1277,6 +1467,7 @@ main {
   .c-follow-container {
     max-width: 17rem;
   }
+
 }
 
 @media (width<600px) {

@@ -32,45 +32,55 @@
 </head>
 
 <body>
-  <!--imp! HEADERf -->
 
-  <header class="l-header">
+  <!--imp! HEADER -->
+
+  <header>
     <nav class="desktop-nav">
       <div class="logo-div">
-        <a role="logo" href="index.html" class="logo"><img src="/images/rainydays-logo.png" alt="" /></a>
+        <a role="logo" href="index.html" class="logo"><img src="/images/rainydays-logo.png" alt=""></a>
       </div>
-      <input type="checkbox" id="check" />
+      <input type="checkbox" id="check">
       <div class="nav-links">
-        <li role="home">
-          <a href="index.html" class="nav-item">Home</a>
-        </li>
-        <li role="jackets">
-          <a href="men.html" class="nav-item">Jackets</a>
-        </li>
-        <!-- <li> <a href="guitar.html" class="nav-item">Men’s</a></li>
-                <li> <a href="contact.html" class="nav-item">Women’s</a></li>
-                <li> <a href="contact.html" class="nav-item">Kids</a></li> -->
-        <li role="aboutus">
-          <a href="about.html" class="nav-item">About us</a>
-        </li>
-        <li role="contact">
-          <a href="contact.html" class="nav-item">Contact</a>
-        </li>
-        <label for="check" class="c-close-menu">
-          <i class="fa-solid fa-x"></i>
-        </label>
-      </div>
-      <div class="nav-icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
+        <li role="home"> <a href="index.html" class="nav-item">Home</a></li>
+        <li role="jackets" id="jacket-links">
+          <a href="#" class="nav-item nav-item-link ">Jackets</a>
+          <div class="jacket-categories-main">
+            <div class="jacket-categories-sub">
+              <ul>
+                <li> <a href="/men.html"">Men's</a></li>
+                                  <li> <a href=" #"">Women's</a></li>
+                <li> <a href="#"">Kids</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <details class=" jacket-links-mobile">
+                    <summary class="jacket-summary">
+                      Jackets
+                    </summary>
+                    <a href="/men.html" class="c-summary-btn"> Men's</a>
+                    <a href="/" class="c-summary-btn"> Women's</a>
+                    <a href="/" class="c-summary-btn"> Kids</a>
+                    </details>
+                <li role=" aboutus"> <a href="about.html" class="nav-item">About us</a></li>
+                <li role="contact"> <a href="contact.html" class="nav-item">Contact</a></li>
+                <label for="check" class="c-close-menu">
+                  <i class="fa-solid fa-x"></i>
+                </label>
+            </div>
+            <div class="nav-icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
 
-      <label for="check" class="c-open-menu">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+            <label for="check" class="c-open-menu">
+              <i class="fa-solid fa-bars"></i>
+            </label>
     </nav>
   </header>
+
 
   <main>
     <section class="c-adjust">
@@ -210,7 +220,7 @@
       <div class="c-jacket-list">
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-text-container">
@@ -231,7 +241,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-1.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-1.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -250,7 +260,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-2.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-2.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -269,7 +279,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-3.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-3.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -288,7 +298,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-4.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-4.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -307,7 +317,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-5.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-5.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -326,7 +336,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-6.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-6.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -345,7 +355,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-7.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-7.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -364,7 +374,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-8.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"> <img src="/images/men-img/image-8.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -383,7 +393,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-9.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-9.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -402,7 +412,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-10.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-10.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -421,7 +431,7 @@
 
         <div class="c-jacket-item">
           <div class="c-jacket-img-conatiner">
-            <img src="/images/men-img/image-11.jpg" alt="Jacket model" />
+            <a href="/jacket-specific.html"><img src="/images/men-img/image-11.jpg" alt="Jacket model" /></a>
           </div>
 
           <div class="c-item-col">
@@ -449,7 +459,7 @@
         </div>
 
         <div class="c-load-more-btn">
-          <div>Load more</div>
+          <a href="/men.html">Load more</a>
         </div>
       </div>
     </section>

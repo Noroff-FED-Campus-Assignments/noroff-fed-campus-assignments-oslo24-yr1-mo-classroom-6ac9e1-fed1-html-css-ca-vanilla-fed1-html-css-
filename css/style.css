@@ -332,6 +332,10 @@ header {
         padding: 1rem;
     }
 
+    .jacket-summary::-webkit-details-marker {
+        display: none;
+    }
+
     .jacket-links-mobile .jacket-summary:hover {
         background-color: lightgray;
         color: #000000;
@@ -920,7 +924,6 @@ header {
         gap: 0.7rem;
         overflow-x: scroll;
         justify-content: flex-start;
-        padding-bottom: 2rem;
     }
 
     .hero-page-hr-2 {
@@ -1331,7 +1334,7 @@ header {
 }
 
 .hero-page-hr-3 {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     height: none;
     border: none;
     border-top: 0.5px solid #00000050;
@@ -1437,6 +1440,13 @@ header {
 @media (width>600px) {
     .section-3-mobile {
         display: none;
+    }
+}
+
+
+@media (width<420px) {
+    .section-3-mobile-container-inside-text {
+        top: 16rem;
     }
 }
 
@@ -2047,6 +2057,12 @@ header {
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+
+}
+
+
+.c-footer-summary::-webkit-details-marker {
+    display: none;
 }
 
 .c-summary-btn {
