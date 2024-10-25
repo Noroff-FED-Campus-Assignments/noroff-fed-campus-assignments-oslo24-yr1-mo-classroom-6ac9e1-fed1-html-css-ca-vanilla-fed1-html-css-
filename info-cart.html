@@ -84,16 +84,42 @@
 
     <main class="l-main">
       <section class="c-hero">
+        <div class="c-back-btn">
+          <a href="/"><i class="fa-solid fa-arrow-left"></i>Back</a>
+        </div>
         <div class="c-main-header">Guest checkout</div>
-        <div class="c-line"></div>
+        <div class="c-line-progress">
+          <div class="c-line-container">
+            <div class="c-line-black-container">
+              <div class="c-line-text">Cart</div>
+              <div class="c-line-black">
+                <div class="c-dot-black"></div>
+              </div>
+            </div>
+
+            <div class="c-line-grey-container">
+              <div class="c-line-text">Checkout</div>
+              <div class="c-line-grey">
+                <div class="c-dot-grey"></div>
+              </div>
+            </div>
+
+            <div class="c-line-grey-container">
+              <div class="c-line-text">Success</div>
+              <div class="c-line-grey">
+                <div class="c-dot-grey"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-shipping-header-container">
+        <div class="c-shipping-header">Shipping Information</div>
       </section>
 
       <section class="c-shipping-summary-container">
         <div class="c-shipping-container">
-          <div class="c-shipping-header">
-            <div>Shipping Information</div>
-          </div>
-
           <div class="c-email-header">
             <i class="fa-solid fa-user"></i>
             <p>Enter your email</p>
@@ -109,14 +135,16 @@
               <p>You can create an account after checkout</p>
             </div>
 
-            <div class="c-input">
-              <input type="text" id="input" />
-              <label class="c-label">First Name</label>
-            </div>
+            <div class="c-city-zip-container">
+              <div class="c-input">
+                <input type="text" id="input" />
+                <label class="c-label">First Name</label>
+              </div>
 
-            <div class="c-input">
-              <input type="text" id="input" />
-              <label class="c-label">Last Name</label>
+              <div class="c-input">
+                <input type="text" id="input" />
+                <label class="c-label">Last Name</label>
+              </div>
             </div>
 
             <div class="c-input">
@@ -146,22 +174,63 @@
               <label class="c-label">Street Address</label>
             </div>
 
-            <div class="c-input">
-              <input type="text" id="input" />
-              <label class="c-label">City</label>
-            </div>
+            <div class="c-city-zip-container">
+              <div class="c-input">
+                <input type="text" id="input" />
+                <label class="c-label">City</label>
+              </div>
 
-            <div class="c-input">
-              <input type="text" id="input" />
-              <label class="c-label">Zip/Postal code</label>
+              <div class="c-input">
+                <input type="text" id="input" />
+                <label class="c-label">Zip/Postal code</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-shipping-method-container">
+            <div class="c-method-header">Shipping Method</div>
+            <div class="c-method-container">
+              <div class="c-method-row">
+                <div class="c-check-container">
+                  <input type="checkbox" id="delivery" />
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="c-delivery-text">
+                  <p class="c-text-top">BRING Home Delivery</p>
+                  <p class="c-text-bottom">
+                    Standard delivery: 2-6 working days
+                  </p>
+                </div>
+                <div class="c-delivery-price">
+                  <p>0kr</p>
+                </div>
+              </div>
+
+              <div class="c-method-row">
+                <div class="c-check-container">
+                  <input type="checkbox" id="delivery" />
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="c-delivery-text">
+                  <p class="c-text-top">BRING Pick-Up Point</p>
+                  <p class="c-text-bottom">
+                    Standard delivery: 2-6 working days
+                  </p>
+                </div>
+                <div class="c-delivery-price">
+                  <p>0kr</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="c-summary">
           <div class="c-express-container">
             <div class="c-express-text">Sign in for express checkout</div>
             <i class="fa-solid fa-chevron-down"></i>
           </div>
+
           <div class="c-summary-container">
             <div class="c-summary-header">
               <p>Order Summary</p>
@@ -219,7 +288,8 @@
             </div>
           </div>
         </div>
-
+      </section>
+      <section>
         <div class="c-btn-container">
           <a href="card-cart-html" class="c-btn">Checkout</a>
         </div>
