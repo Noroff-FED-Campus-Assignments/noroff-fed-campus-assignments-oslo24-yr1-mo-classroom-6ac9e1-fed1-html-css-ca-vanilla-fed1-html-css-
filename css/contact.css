@@ -143,7 +143,7 @@ header {
 
 .nav-icons i {
     padding-left: 1.25rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #check {
@@ -749,6 +749,10 @@ header {
     background-color: #0146AC;
     color: #fff;
     border-radius: 3rem;
+}
+
+.form-i-submit-contact:focus {
+    background-color: var(--background-color-addbtn-hover);
 }
 
 @media (width<999px) {
