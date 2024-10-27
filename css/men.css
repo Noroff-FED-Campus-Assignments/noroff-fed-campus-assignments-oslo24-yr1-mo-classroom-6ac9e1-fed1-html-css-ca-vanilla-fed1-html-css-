@@ -571,8 +571,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    border: 1px solid grey;
+    border: 2px solid #ececec;
     padding: 2rem 2rem;
     font-family: 'Prompt';
     font-weight: 500;
@@ -638,7 +637,7 @@ main {
     .c-activity-color-container {
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 1rem;
       flex-wrap: wrap;
       padding-bottom: 1rem;
       justify-content: space-between;
@@ -652,7 +651,7 @@ main {
 
         .c-activity-color-ball {
           display: flex;
-          padding: 1rem 1rem;
+          padding: 0.8rem 0.8rem;
           border-radius: 100%;
           align-items: center;
           justify-content: center;
@@ -753,13 +752,30 @@ main {
   flex-direction: row;
   padding: 10px 0px;
   align-items: center;
-  gap: 0.4rem;
+}
+
+.c-color-btn-common-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+}
+
+.c-color-btn-common-b:hover {
+  border: 1px solid black;
+
 }
 
 .c-color-btn-black {
   display: flex;
   padding: 0.6rem 0.6rem;
-  background-color: black;
+  background-color: #000000;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -767,7 +783,7 @@ main {
 .c-color-btn-blue {
   display: flex;
   padding: 0.6rem 0.6rem;
-  background-color: blue;
+  background-color: #A8704B;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -775,7 +791,7 @@ main {
 .c-color-btn-red {
   display: flex;
   padding: 0.6rem 0.6rem;
-  background-color: red;
+  background-color: #da2c00;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -999,6 +1015,12 @@ main {
   display: flex;
   gap: 5rem;
   align-items: center;
+}
+
+.hero-page-hr-4 {
+  height: none;
+  border: none;
+  border-top: 0.5px solid #00000050;
 }
 
 .hero-page-hr-5 {
