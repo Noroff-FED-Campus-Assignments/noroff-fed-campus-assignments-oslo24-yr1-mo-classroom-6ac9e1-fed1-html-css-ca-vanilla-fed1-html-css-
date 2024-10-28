@@ -132,7 +132,7 @@
 
           <div class="c-input-container">
             <div class="c-input">
-              <input type="email" id="input" />
+              <input type="email" id="input" required="true" />
               <label class="c-label">Email</label>
             </div>
 
@@ -147,7 +147,7 @@
               </div>
 
               <div class="c-input">
-                <input type="text" id="input" />
+                <input type="text" id="input" required-field="true" />
                 <label class="c-label">Last Name</label>
               </div>
             </div>
@@ -296,7 +296,9 @@
       </section>
       <section>
         <div class="c-btn-container">
-          <a href="checkout.html" class="c-btn">Checkout</a>
+          <a href="checkout.html"
+            ><input type="submit" name="submit" id="submit" value="Submit" />
+          </a>
         </div>
       </section>
     </main>
