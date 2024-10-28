@@ -162,6 +162,7 @@ header {
 .nav-icons i {
   padding-left: 1.25rem;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 #check {
@@ -566,16 +567,18 @@ main {
   flex-direction: column;
   flex: 1 1 20%;
   width: 100%;
+  height: 49rem;
+  min-width: 22.3rem;
+  border: 2px solid #ebebeb;
+  overflow-x: hidden;
 
   .c-activity-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid #ececec;
     padding: 2rem 2rem;
     font-family: 'Prompt';
     font-weight: 500;
-    min-width: 20rem;
 
 
     .c-activity-header {
@@ -587,6 +590,11 @@ main {
       font-family: 'Prompt';
       font-size: 1.2rem;
       font-weight: 500;
+    }
+
+    .fa-circle-xmark {
+      font-size: 1.2rem;
+      cursor: pointer;
     }
 
     .c-activity-choose {
@@ -602,8 +610,8 @@ main {
       .c-activity-checkbox {
         display: flex;
         border-color: #858383;
-        width: 22px;
-        height: 22px;
+        width: 1.375rem;
+        height: 1.375rem;
       }
     }
 
@@ -616,7 +624,7 @@ main {
     }
 
     .c-line-activity {
-      border-bottom: 1px solid #858383;
+      border-bottom: 2px solid #d3d3d3;
       padding-bottom: 2rem;
       font-size: 18px;
     }
@@ -629,15 +637,14 @@ main {
       padding-bottom: 2rem;
       padding-top: 2rem;
       font-family: 'Prompt';
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
-
     }
 
     .c-activity-color-container {
       display: flex;
       flex-direction: row;
-      gap: 1rem;
+      gap: 2rem;
       flex-wrap: wrap;
       padding-bottom: 1rem;
       justify-content: space-between;
@@ -669,43 +676,125 @@ main {
 
         .c-color-beige {
           background-color: #f5f5dc;
+          cursor: pointer;
         }
 
         .c-color-black {
           background-color: #000000;
+          cursor: pointer;
         }
 
         .c-color-blue {
+          cursor: pointer;
           background-color: #0146ac;
         }
 
         .c-color-grey {
           background-color: #8b8e8c;
+          cursor: pointer;
         }
 
         .c-color-yellow {
           background-color: #eea722;
+          cursor: pointer;
         }
 
         .c-color-red {
           background-color: #c91f2d;
+          cursor: pointer;
         }
 
         .c-color-cactus {
           background-color: #536649;
+          cursor: pointer;
         }
 
         .c-color-pink {
           background-color: #ffbfcb;
+          cursor: pointer;
         }
 
         .c-color-green {
           background-color: #008001;
+          cursor: pointer;
         }
       }
     }
-  }
 
+    .c-activity-size-container {
+      display: flex;
+      flex-direction: column;
+
+      .c-activity-size-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0 2rem 0;
+      }
+
+      .c-activity-size-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .c-activity-size {
+        display: flex;
+        min-width: 2.3rem;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Prompt';
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 300;
+        border: 1px solid black;
+        border-radius: 0.2rem;
+        cursor: pointer;
+      }
+
+      .c-activity-size:hover {
+        background-color: var(--background-color-addbtn-hover);
+      }
+    }
+
+    .c-activity-fit-container {
+      display: flex;
+      flex-direction: column;
+
+      .c-activity-fit-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0 2rem 0;
+      }
+
+      .c-activity-fit-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .c-activity-fit-list-sub {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      .c-activity-fit-list-sub input {
+        width: 1.375rem;
+      }
+
+      .c-activity-fit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Prompt';
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
 }
 
 .c-activity {
@@ -714,7 +803,7 @@ main {
 
 
 .c-jacket-list {
-  flex: 1 1 80%;
+  flex: 1 1 75%;
 }
 
 .c-jacket-list {
