@@ -224,8 +224,8 @@ header {
   flex: 2 1 auto;
   margin-top: 112.2px;
   font-family: 'Roboto';
-  padding: 0% 4%;
-  padding-bottom: 5rem;
+  padding: 0% 6%;
+  padding-bottom: 2rem;
 }
 
 /* content main */
@@ -316,7 +316,7 @@ header {
           display: flex;
           justify-content: center;
           align-items: center;
-          border-bottom: 2px solid grey;
+          border-bottom: 2px solid rgb(170, 169, 169);
           width: 100%;
           flex: 1 1 auto;
         }
@@ -333,7 +333,7 @@ header {
 
       .c-line-text {
         display: flex;
-        color: grey;
+        color: rgb(170, 169, 169);
         font-family: 'Roboto';
         font-size: var(--size-m);
         font-style: normal;
@@ -345,7 +345,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid rgb(170, 169, 169);
         width: 100%;
         position: relative;
 
@@ -354,7 +354,7 @@ header {
           width: 15px;
           height: 15px;
           border-radius: 100%;
-          background-color: grey;
+          background-color: rgb(170, 169, 169);
         }
       }
     }
@@ -426,6 +426,8 @@ input#input {
   border-radius: 10px;
   background: transparent;
   border: 1px solid black;
+  letter-spacing: 1px;
+  padding-left: 0.5rem;
 }
 
 .c-label {
@@ -730,8 +732,7 @@ input#input {
   justify-content: center;
 }
 
-.c-btn {
-  display: flex;
+input#submit {
   padding: 1.5rem 4rem;
   text-decoration: none;
   color: white;
@@ -740,11 +741,12 @@ input#input {
   background-color: black;
   font-size: var(--size-m);
   font-weight: 500;
+  cursor: pointer;
+  border: none;
 }
 
-.c-btn:hover {
-  background-color: darkgray;
-  color: #000;
+input#submit:hover {
+  background-color: rgb(31, 29, 29);
 }
 
 @media only screen and (width>599px) {
@@ -1065,6 +1067,7 @@ input#input {
 
 .c-follow-icons i {
   font-size: 1.2rem;
+  color: white;
 }
 
 .c-follow-p p {
