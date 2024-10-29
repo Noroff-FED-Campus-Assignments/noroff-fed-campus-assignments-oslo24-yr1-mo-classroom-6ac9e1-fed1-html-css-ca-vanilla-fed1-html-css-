@@ -253,7 +253,7 @@ header {
   color: #021526;
   text-align: center;
   font-family: 'Roboto';
-  font-size: var(--size-xxl);
+  font-size: var(--size-l);
   font-style: normal;
   font-weight: 700;
   padding-bottom: 3rem;
@@ -735,14 +735,24 @@ input#input {
 
 .c-btn-container {
   display: flex;
-  width: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.c-btn-container a {
+  text-decoration: none;
 }
 
 input#submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 1rem 2rem;
+  width: 100%;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -753,10 +763,21 @@ input#submit {
   cursor: pointer;
   border: none;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 input#submit:hover {
   background-color: rgb(20, 19, 19);
+}
+
+@media only screen and (width>400px) {
+  .c-main-header {
+    font-size: var(--size-xxl);
+  }
+
+  input#submit {
+    padding: 1.2rem 3rem;
+  }
 }
 
 @media only screen and (width>599px) {
