@@ -1,0 +1,622 @@
+/*    Global    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --size-xxs: 0.2rem;
+  --size-xs: 0.5rem;
+  --size-md: 0.8rem;
+  --size-lg: 1rem;
+  --size-xl: 1.2rem;
+  --size-xxl: 2rem;
+  --size-huge: 10rem;
+
+  --color-primal: #ffe5ba;
+  --color-secondary: #0d1b2a;
+  --color-buttons: #eae0cf;
+  --color-bt-red: #db615d;
+  --color-bt-yellow: #f1c065;
+
+  --speed-slowest: 700ms;
+  --speed-slower: 500ms;
+  --speed-slow: 400ms;
+  --speed-base: 300ms;
+  --speed-fast: 250ms;
+  --speed-faster: 200ms;
+  --speed-fastest: 180ms;
+
+  --button-radius: 0.8rem;
+  --image-radious: 1.8rem;
+}
+
+/* Montserrat Font - Regular */
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Roboto Font - Regular */
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-seri;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-seri;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-seri;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-seri;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-seri;
+}
+
+p {
+  font-size: 1rem;
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-seri;
+}
+
+html {
+  font-size: 100%;
+}
+
+html,
+body {
+  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  font-size: 100%;
+  display: grid;
+}
+
+/* Header */
+
+/* Header Styling */
+header {
+  padding: 20px 0;
+  background-color: var(--color-primal);
+  padding: 20px;
+}
+
+/* Container Layout */
+.container-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navigation Bar Layout */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Logo */
+.c-logo-nav img {
+  max-width: 100px;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Navigation Links */
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  padding: var(--size-xs);
+  text-align: center;
+}
+
+/* Icon Buttons */
+.c-header-icon-buttons {
+  display: flex;
+  gap: var(--size-xs);
+}
+
+.icon-button-div {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Search Bar Under Navigation */
+.c-header-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: var(--size-lg);
+  padding: var(--size-xs);
+  border: 0.1rem solid var(--color-secondary);
+  border-radius: var(--button-radius);
+  background-color: white;
+}
+
+.c-header-search label {
+  flex-grow: 1;
+  padding-left: 10px;
+  color: var(--color-secondary);
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Show Hamburger Icon */
+  .hamburger-menu {
+    display: block;
+    order: -1;
+  }
+
+  /* Hide Navigation Links on Mobile */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primal);
+    padding: 10px 0;
+  }
+
+  /* Show Nav Links as a List when Active */
+  #nav-links.active {
+    display: flex;
+  }
+
+  /* Full-width Search Bar */
+  .c-header-search {
+    width: 90%;
+  }
+}
+
+/*  Main Banner */
+
+.c-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/media/hero_image_home.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 600px;
+  width: auto;
+  color: var(--color-primal);
+  display: flex;
+}
+
+.c-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.banner-logo {
+  display: flex;
+  align-self: center;
+  margin-top: var(--size-xxl);
+  background-color: var(--color-primal);
+  opacity: 0.5;
+  border-radius: 28px;
+  max-width: 450px;
+  max-height: auto;
+}
+
+.banner-content button {
+  padding: 10px 20px;
+  background-color: var(--color-bt-red);
+  color: var(--color-secondary);
+  border: 0.1rem, solid, var(--color-secondary);
+  border-radius: 12px;
+  max-width: 350px;
+  min-height: 46px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.read-more-title {
+  padding: 4px;
+  width: 200px;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+.read-more-content {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
+.h1-banner {
+  display: flex;
+  font-weight: 200;
+  font-size: 2.2rem;
+  align-self: center;
+}
+
+.h1-container {
+  display: flex;
+}
+
+/* Category Section */
+
+.categories-section {
+  overflow-x: hidden; /* or visible */
+  padding: 1rem;
+  background-color: var(--color-primal);
+}
+
+.categories-title {
+  background-color: var(--color-primal);
+  font-size: 24px;
+  color: var(--color-secondary);
+}
+
+.categories {
+  background-color: var(--color-primal);
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1.5rem;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.categories::-webkit-scrollbar {
+  display: none; /* Hide the scroll bar */
+}
+
+.categories {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Adds smoother scrolling on mobile */
+}
+
+.category {
+  flex: 0 0 auto;
+  width: 222px;
+  height: 121px;
+  scroll-snap-align: center;
+}
+
+.category-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-buttons);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+  z-index: 1;
+}
+
+.category-box span {
+  position: relative;
+  z-index: 2;
+}
+
+.category:nth-child(1) .category-box {
+  background-image: url(/media/movie-genre/comedy.jpg);
+}
+
+.category:nth-child(2) .category-box {
+  background-image: url(/media/movie-genre/sci-fi.jpg);
+}
+
+.category:nth-child(3) .category-box {
+  background-image: url(/media/movie-genre/action.jpg)
+}
+
+.category:nth-child(4) .category-box {
+  background-image: url(/media/movie-genre/horror.jpg);
+}
+
+.category:nth-child(5) .category-box {
+  background-image: url(/media/movie-genre/fantasy.jpg);
+}
+
+.category:nth-child(6) .category-box {
+  background-image: url(/media/movie-genre/history.jpg);
+}
+
+.category:nth-child(7) .category-box {
+  background-image: url(/media/movie-genre/musical.jpg);
+}
+
+.category:nth-child(8) .category-box {
+  background-image: url(/media/movie-genre/romance-1.jpg);
+}
+
+.category:nth-child(9) .category-box {
+  background-image: url(/media/movie-genre/drama.jpg);
+}
+
+.category:nth-child(10) .category-box {
+  background-image: url(/media/movie-genre/western.jpg);
+}
+
+.category:nth-child(11) .category-box {
+  background-image: url(/media/movie-genre/thriler.jpg);
+}
+
+
+.category-box:hover {
+  background-color: #777;
+}
+
+
+
+/* Trending Section */
+
+/* General Styling for Trending Section */
+
+
+.trending-section {
+  background-color: var(--color-primal);
+}
+
+.c-trending-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.c-movie-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 300px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden; /* Ensures that content does not spill out */
+}
+
+/* Movie Image Styling */
+.c-movie-item .movie-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+/* Hover Effect for Image */
+.c-movie-item:hover .movie-image-box img {
+  filter: grayscale(0.5) brightness(0.4);
+}
+
+/* Hidden Content Box Styling */
+.movie-content-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-buttons);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  padding: 10px;
+}
+
+/* Show Content Box on Hover */
+.c-movie-item:hover .movie-content-box {
+  opacity: 1;
+}
+
+/* Title and Description Transitions */
+.movie-content-box h6 {
+  margin: 10px 0;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.movie-content-box p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.c-movie-item:hover .movie-content-box h6 {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c-movie-item:hover .movie-content-box p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button Styling */
+.watch-btn {
+  margin-top: 15px;
+  background-color: #db615d;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: var(--button-radius);
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.c-movie-item:hover .watch-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Footer Section  */
+
+.c-footer {
+  display: flex;
+  min-height: 400px;
+  width: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  justify-content: end;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0d1b2a;
+  border: 0.3rem, solid var(--color-primal);
+  border-radius: 146px;
+  width: 260px;
+  height: 160px;
+  padding: var(--size-md);
+  margin-bottom: var(--size-xxl);
+  margin-left: var(--size-xxl);
+}
+
+.logo-img {
+  height: 130px;
+  width: 210px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--size-xs);
+  margin-left: var(--size-xl);
+  margin-right: var(--size-xl);
+}
+
+hr {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--size-xl);
+  color: var(--color-primal);
+}
+
+.footer-menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--color-primal);
+}
+
+footer a i {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--color-primal);
+}
+
+.fa-brands-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fa-brands-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+small {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--color-primal);
+}
+
+a.fa-brands-title {
+  display: flex;
+  color: var(--color-primal);
+  margin-bottom: var(--size-lg);
+}
