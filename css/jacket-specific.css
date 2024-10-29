@@ -167,6 +167,10 @@ header {
 
 }
 
+.nav-login {
+    color: #000000;
+}
+
 .add-number {
     visibility: visible;
     opacity: 1;

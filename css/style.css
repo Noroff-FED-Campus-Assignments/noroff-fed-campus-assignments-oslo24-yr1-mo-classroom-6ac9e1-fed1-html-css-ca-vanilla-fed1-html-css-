@@ -10,7 +10,7 @@
     --background-color-blue-btn: #039BE5;
     --background-color-footer: #03346E;
     --background-color-addbtn: #da2c00;
-    --background-color-addbtn-hover: #c9c9c9;
+    --background-color-addbtn-hover: #b5b5b5;
 
 }
 
@@ -177,6 +177,10 @@ header {
     transition: max-height 0.2s ease-in;
     opacity: 1;
 
+}
+
+.nav-login {
+    color: #000000;
 }
 
 .jacket-links-mobile {
