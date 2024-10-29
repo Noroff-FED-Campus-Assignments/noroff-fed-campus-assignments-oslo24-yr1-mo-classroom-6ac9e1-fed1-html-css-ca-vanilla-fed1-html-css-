@@ -197,6 +197,10 @@ header {
 
 }
 
+.nav-login {
+  color: #000000;
+}
+
 .jacket-links-mobile {
   display: none;
 }
