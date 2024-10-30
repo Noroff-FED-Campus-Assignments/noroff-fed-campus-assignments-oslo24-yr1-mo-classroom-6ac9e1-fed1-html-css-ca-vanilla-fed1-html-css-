@@ -199,4 +199,42 @@ p {
         color: #fff;
     }
 
+    @media(width<600px) {
+        .login-logo {
+            width: 10rem;
+        }
+
+        .login-text-container {
+            padding: 4rem 2rem;
+        }
+
+        .login-text label {
+            font-size: 1.1rem;
+        }
+
+        .login-submit {
+            font-size: 1.1rem;
+        }
+
+        .login-options {
+            flex-direction: column;
+        }
+
+        .login-options a:nth-child(1) {
+            width: 100%;
+        }
+
+        .login-options a:nth-child(2) {
+            width: 100%;
+        }
+
+        .login-options a:nth-child(3) {
+            width: 100%;
+        }
+
+        .login-register {
+            font-size: 1.1rem;
+        }
+    }
+
 }
