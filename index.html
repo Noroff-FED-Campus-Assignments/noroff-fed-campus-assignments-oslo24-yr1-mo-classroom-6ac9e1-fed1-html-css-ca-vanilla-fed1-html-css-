@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width initial-scale=1.0" />
@@ -14,59 +13,56 @@
     <body>
       <!--Header-->
 
-      <header>
-  <div class="container-nav">
-    <!-- Navigation Bar -->
-    <nav>
-      <!-- Hamburger Icon on the Left for Mobile -->
-      <div class="hamburger-menu" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="c-logo-nav">
-        <img
-          src="/media/SquareEyes_Logo.png"
-          alt="A pair of glasses with eyes on top of the writing logo Square Eyes"
-        />
-      </div>
-      <!-- Navigation Links -->
-      <ul id="nav-links">
-        <li><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-        <li><a href="/film.html"><i class="fa-solid fa-film"></i>Films</a></li>
-        <li><a href="/about.html"><i class="fa-regular fa-address-card"></i>About</a></li>
-      </ul>
-      <!-- Icon Buttons -->
-      <div class="c-header-icon-buttons">
-        <div class="icon-button-div">
-          <a class="icon-button"><i class="fa-solid fa-circle-user"></i></a>
+  <header>
+    <div class="container-nav">
+      <!-- Navigation Bar -->
+      <nav>
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i></div>
+        <div class="c-logo-nav">
+          <img src="/media/SquareEyes_Logo.png"
+               alt="A pair of glasses with eyes on top of the writing logo Square Eyes"/>
         </div>
-        <div class="icon-button-div">
-          <a class="icon-button"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- Navigation Links -->
+        <ul id="nav-links">
+          <li><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+          <li><a href="/film.html"><i class="fa-solid fa-film"></i>Films</a></li>
+          <li><a href="/about.html"><i class="fa-regular fa-address-card"></i>About</a></li>
+        </ul>
+        <!-- Icon Buttons -->
+        <div class="c-header-icon-buttons">
+          <div class="icon-button-div">
+            <a class="icon-button"><i class="fa-solid fa-circle-user"></i></a>
+          </div>
+          <div class="icon-button-div">
+            <a class="icon-button"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Search Bar Below Nav Menu -->
-    <div class="c-header-search">
-      <label for="search">Search for Independent Movies</label>
-      <input type="search" id="search" name="search" placeholder="Search" />
-      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <!-- Search Bar  -->
+      <div class="c-header-search">
+        <label for="search">Search for Independent Movies</label>
+        <input type="search" id="search" name="search" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
 <!-- JavaScript for Hamburger Menu -->
-<script>
-  function toggleMenu() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('active');
-  }
-</script>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 
 
 
       <!-- Baner Section-->
 
-      <section class="banner-section">
+   <section class="banner-section">
     <div class="banner-overlay">
       <div class="banner-logo-container">
         <img src="/media/SquareEyes_Logo.png" alt="Square Eyes logo" class="banner-logo">
@@ -74,12 +70,12 @@
         <div class="banner-content">
             <h1 class="banner-title">Discover Independent Films</h1>
             <p class="banner-description">
-                Support unique stories from around the world. Watch award-winning dramas, groundbreaking documentaries, and more.
+                Support unique stories from around the world. Watch award-winning Films.
             </p>
             <button class="banner-button">Start Watching & Support Now</button>
         </div>
     </div>
-</section>
+   </section>
 
      
       <!--Category Section-->
@@ -173,7 +169,7 @@
 
       <section class="trending-section">
         <h2 class="trending-title">🔥 Trending</h2>
-        <dic class="c-trending-grid">
+        <div class="c-trending-grid">
 <!-- One Item -->
           <div class="c-movie-item">
             <div class="movie-image-box">
@@ -182,11 +178,9 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Wonder Woman</h6>
               <p>Action, Adventure, Fantasy - 2017  2h 21m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
-
-<!-- One Item -->
 
           <div class="c-movie-item">
             <div class="movie-image-box">
@@ -195,7 +189,7 @@
             <div class="movie-content-box">
               <h6>Dungeons & Dragons</h6>
               <p>Adventure, Fantasy, Action - 2023  2h 24m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -206,7 +200,7 @@
             <div class="movie-content-box">
               <h6>Alien Romulus</h6>
               <p>Horror,Science Fiction  - 2024 - 1h 59m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -217,7 +211,7 @@
             <div class="movie-content-box">
               <h6>Green Book</h6>
               <p>Drama, History  - 2018 - 2h 10m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -228,7 +222,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Ant-Man and The Wasp</h6>
               <p>Action, Sci.Fi - 2018  1h 59m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -239,7 +233,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">A Quiet Place: Day One</h6>
               <p>Horror, Sci-Fi - 2024  1h 39m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -250,7 +244,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Bad Boys: Ride or Die</h6>
               <p>Action - 2024  1h 55m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -261,7 +255,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">The Batman</h6>
               <p>Crime, Thriller - 2022  2h 57m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -272,7 +266,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Beetlejuice Beetlejuice</h6>
               <p>Comedy, Fantasy, Horror - 2024  1h 45m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -283,7 +277,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Borderlands</h6>
               <p>Action, Sci-Fi, Comedy - 2024  1h 41m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -294,7 +288,7 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Deadpool & Wolverine</h6>
               <p>Action, Comedy, Sci-Fi - 2024  2h 8m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
@@ -305,18 +299,104 @@
             <div class="movie-content-box">
               <h6 class="h6-movie-title">Despicable Me 4</h6>
               <p>Animation, Family, Comedy, Action - 2024  1h 34m</p>
-              <a href="#"  class="watch-btn">Buy or Rent</a>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
             </div>
           </div>
 
-          
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/anatomy-of-a-murder.jpg" alt="Anatomy of a Murder movie poster, from 1959 " />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Anatomy of a Murrder</h6>
+              <p>Crime, Drama, Mystery - 1959  2h 41m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
 
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/bVgc2kyFoaDC6lU6VyVBDJVXCZG.jpg" alt="Love in the Afternoon movie poster, from 1957" />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Love in the Afternoon</h6>
+              <p>Comedy, Romance - 1957  2h 11m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
 
-        </dic>
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/full-metal-jacket.jpg" alt="Full Metal Jacket movie poster, from 1987. " />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Full Metal Jacket</h6>
+              <p>Action, Drama,War - 1987  1h 57m</p>
+              <a href="/video-page.html" class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
+
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/little-miss-sunshine-1.jpg" alt="Little MIss Sunshine movie poster, from 2006 staring Steve Carell." />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Little Miss Sunshine</h6>
+              <p>Comedy, Drama - 2006  1h 42m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
+
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/lord-of-war.webp" alt="Lorde of war movie poster, from 2005 staring NIcolas Cage." />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Lord of war</h6>
+              <p>Crime,Darma, Thriller - 2005  2h 2m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
+
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/moon.jpg" alt="Moonlight movie poster, from 2016." />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Moonlight</h6>
+              <p>Drama - 2016  1h 51m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
+
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/parrasite.jpg" alt="Parrasite movie poster, from 2019." />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">Parasite</h6>
+              <p>Comedy, Thriller, Drama - 2019  2h 13m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
+
+          <div class="c-movie-item">
+            <div class="movie-image-box">
+              <img class="movie-image-trending" src="/media/movie-image-1/the-social-network-2.jpg" alt="The Social Network movie poster, from 2010, staring Jesse Eisenberg." />
+            </div>
+            <div class="movie-content-box">
+              <h6 class="h6-movie-title">The Social Network</h6>
+              <p>Drama - 2010  2h 1m</p>
+              <a href="/video-page.html"  class="watch-btn">Buy or Rent</a>
+            </div>
+          </div>
+
+        </div>
       </section>
+
+
       <!-- Footer Section  -->
 
-     
           <footer class="c-footer">
             <div class="footer-logo-container">
               <img
@@ -330,7 +410,7 @@
               <a class="footer-menu-items">Privacy Policy</a>
               <a class="footer-menu-items">Terms & Conditions</a>
               <a class="footer-menu-items">Cookie Policy</a>
-              <a class="footer-menu-items">Contact </a>
+              <a href="/contact.html" class="footer-menu-items">Contact </a>
 
               <div class="fa-brands-icon-container">
                 <a class="fa-brands-title"> Follow Square Eyes on social</a>

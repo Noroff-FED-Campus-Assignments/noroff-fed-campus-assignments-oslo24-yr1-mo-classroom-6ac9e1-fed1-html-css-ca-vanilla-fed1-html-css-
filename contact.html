@@ -14,13 +14,19 @@
     <!-- Header -->
     <header>
       <div class="container-nav">
+        <!-- Navigation Bar -->
         <nav>
+          <!-- Hamburger Icon for Mobile -->
           <div class="hamburger-menu" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
           </div>
           <div class="c-logo-nav">
-            <img src="/media/SquareEyes_Logo.png" alt="Square Eyes Logo" />
+            <img
+              src="/media/SquareEyes_Logo.png"
+              alt="A pair of glasses with eyes on top of the writing logo Square Eyes"
+            />
           </div>
+          <!-- Navigation Links -->
           <ul id="nav-links">
             <li>
               <a href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
@@ -34,6 +40,7 @@
               >
             </li>
           </ul>
+          <!-- Icon Buttons -->
           <div class="c-header-icon-buttons">
             <div class="icon-button-div">
               <a class="icon-button"><i class="fa-solid fa-circle-user"></i></a>
@@ -45,6 +52,8 @@
             </div>
           </div>
         </nav>
+
+        <!-- Search Bar  -->
         <div class="c-header-search">
           <label for="search">Search for Independent Movies</label>
           <input type="search" id="search" name="search" placeholder="Search" />
@@ -52,6 +61,14 @@
         </div>
       </div>
     </header>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
 
     <!-- Support Section -->
     <section class="support-page-section">

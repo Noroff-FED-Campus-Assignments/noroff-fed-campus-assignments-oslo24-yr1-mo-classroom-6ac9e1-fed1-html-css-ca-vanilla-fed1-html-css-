@@ -19,6 +19,7 @@
   --color-secondary: #0d1b2a;
   --color-buttons: #eae0cf;
   --color-bt-red: #db615d;
+  --color-bt-red-light: #e63946;
   --color-bt-yellow: #f1c065;
 
   --speed-slowest: 700ms;
@@ -104,9 +105,9 @@ body {
 /* Header */
 
 header {
-  padding: 20px 0;
+  padding: 1.2rem 0;
   background-color: var(--color-primal);
-  padding: 20px;
+  padding: 1.2rem;
 }
 
 /* Container Layout */
@@ -140,7 +141,7 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   list-style-type: none;
   margin: 0;
 }
@@ -148,23 +149,27 @@ nav ul {
 nav ul a {
   color: var(--color-secondary);
   text-decoration: none;
-  padding: var(--size-xs);
+  padding: 25px;
   text-align: center;
+  font-family: monserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
 }
 
 .c-header-icon-buttons {
   display: flex;
-  gap: var(--size-xs);
+  gap: 20px;
 }
 
 .icon-button-div {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0.1rem solid var(--color-secondary);
-  border-radius: 50%;
+  border-radius: 30%;
   cursor: pointer;
 }
 
@@ -186,6 +191,7 @@ nav ul a {
   flex-grow: 1;
   padding-left: 10px;
   color: var(--color-secondary);
+  display: none;
 }
 
 .search-icon {
@@ -247,11 +253,11 @@ nav ul a {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  color: #fff;
+  color: var(--color-primal);
 }
 
 .banner-logo-container {
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 20px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -283,8 +289,8 @@ nav ul a {
 }
 
 .banner-button {
-  background-color: #e63946;
-  color: #fff;
+  background-color: var(--color-bt-red-light);
+  color: var(--color-primal);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -368,14 +374,13 @@ nav ul a {
   justify-content: space-between;
   align-items: flex-end;
   padding: 20px;
-  color: #fff;
 }
 
 .banner-title-films {
   font-size: 2.5rem;
   line-height: 1.2;
   font-weight: bold;
-  color: #f1c065; /* Light color for contrast */
+  color: var(--color-bt-yellow);
   margin: 0;
   position: absolute;
   left: 25px;
@@ -386,8 +391,8 @@ nav ul a {
 }
 
 .banner-button-films {
-  background-color: #e63946;
-  color: #fff;
+  background-color: var(--color-bt-red-light);
+  color: var(--color-buttons);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -441,14 +446,15 @@ nav ul a {
 
 .categories-section {
   overflow-x: hidden;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: var(--color-primal);
 }
 
 .categories-title {
   background-color: var(--color-primal);
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--color-secondary);
+  padding: 1rem;
 }
 
 .categories {
@@ -507,6 +513,11 @@ nav ul a {
 .category-box span {
   position: relative;
   z-index: 2;
+  font-family: montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .category:nth-child(1) .category-box {
@@ -573,6 +584,8 @@ nav ul a {
 .trending-title {
   text-align: left;
   margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .c-movie-item {
@@ -644,8 +657,8 @@ nav ul a {
 /* Button Styling */
 .watch-btn {
   margin-top: 15px;
-  background-color: #db615d;
-  color: #fff;
+  background-color: var(--color-bt-red-light);
+  color: var(--color-buttons);
   padding: 8px 12px;
   border-radius: var(--button-radius);
   text-decoration: none;
@@ -659,144 +672,160 @@ nav ul a {
   transform: translateY(0);
 }
 
-
-
-
+/* Popular  Top 10 In Genres Section */
 /* Popular Genres Section */
-/* Popular Genres Section */
+
 .popular-genres-section {
-    padding: 20px 30px;
-    max-width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow on the main container */
+  padding: 20px 30px;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow on the main container */
 }
 
 .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: left;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: var(--color-secondary);
+  text-align: left;
 }
 
 /* Horizontal Scrolling Layout */
 .genres-grid {
-    display: flex;
-    flex-wrap: nowrap; /* Prevents items from wrapping to the next line */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    gap: 20px; /* Space between cards */
-    padding-bottom: 10px; /* Adds spacing at the bottom */
-    scroll-snap-type: x mandatory; /* Smooth snap effect */
+  display: flex;
+  flex-wrap: nowrap; /* Prevents items from wrapping to the next line */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 3rem; /* Space between cards */
+  padding-bottom: 10px; /* Adds spacing at the bottom */
+  scroll-snap-type: x mandatory; /* Smooth snap effect */
 }
 
 .genre-card {
-    flex: 0 0 auto; /* Ensures each card takes up only its content width */
-    width: 220px; /* Adjust width to make them fit more naturally in a carousel */
-    height: 300px;
-    position: relative;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    scroll-snap-align: start; /* Snap each card to the start of the viewport */
+  flex: 0 0 auto; /* Ensures each card takes up only its content width */
+  width: 250px; /* Adjust width to make them fit more naturally in a carousel */
+  height: 300px;
+  position: relative;
+  background-color: var(--color-secondary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.4s;
+  scroll-snap-align: start; /* Snap each card to the start of the viewport */
 }
 
-/* Card Hover Effects */
+.genre-card:after,
+.genre-card:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.genre-card:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid var(--color-secondary);
+  border-left: 5px solid var(--color-secondary);
+}
+.genre-card:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid var(--color-secondary);
+  border-right: 5px solid var(--color-secondary);
+}
 .genre-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.genre-card:hover:before,
+.genre-card:hover:after {
+  width: 100%;
+  height: 100%;
 }
 
 /* Remaining Styles */
 .image-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
-    height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+  height: 100%;
 }
 
 .grid-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .fade-out-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 1) 0px -60px 36px -28px inset;
 }
 
 .card-overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-    font-size: 0.9rem;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 0.9rem;
 }
 
 .top10-label {
-    background-color: #e63946;
-    color: #fff;
-    padding: 3px 6px;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 0.8rem;
-    margin-right: 5px;
+  background-color: var(--color-bt-red-light);
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-right: 5px;
 }
 
 .genre-title {
-    font-weight: bold;
-    color: #f1c065;
-    font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-bt-yellow);
+  font-size: 1rem;
 }
 
 .nav-arrow {
-    font-size: 1.2rem;
-    color: #e63946;
-    transition: color 0.3s, transform 0.3s;
+  font-size: 1.2rem;
+  color: var(--color-bt-red-light);
+  transition: color 0.3s, transform 0.3s;
 }
 
 .genre-card:hover .nav-arrow {
-    color: #f1c065;
-    transform: translateX(5px);
+  color: var(--color-bt-red-light);
+  transform: translateX(10px);
 }
 
 /* Hide scrollbar for a cleaner look */
 .genres-grid::-webkit-scrollbar {
-    display: none; /* For WebKit browsers */
+  display: none; /* For WebKit browsers */
 }
 .genres-grid {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
-
-
-
-
-
-
 
 /* Footer Section  */
 
-
 .c-footer {
   display: flex;
-  min-height: 400px;
+  min-height: 300px;
   width: auto;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: var(--color-secondary);
   justify-content: end;
+  margin-top: 2rem;
 }
 
 .footer-logo-container {
@@ -837,6 +866,11 @@ hr {
   display: flex;
   flex-wrap: wrap;
   color: var(--color-primal);
+  font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 footer a i {
